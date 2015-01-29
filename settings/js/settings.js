@@ -611,11 +611,11 @@
                 fileExtension = file.name.split('.').pop().toLowerCase();
 
             if ($.inArray(fileExtension, imageUploader.supportedExtensions) === -1) {
-                imageUploader.status.fail({ title: '不支持的图片格式', description: '(支持的格式: ' + imageUploader.supportedExtensions.join(', ') + ')' });
+                imageUploader.status.fail({ title: '不支持的图片格式', description: '(支持的格式:' + imageUploader.supportedExtensions.join(', ') + ')' });
                 return;
             }
             if (file.size > imageUploader.maxFileSize * 1024 * 1024) {
-                imageUploader.status.fail({ title: '文件太大', description: '(文件最大不超过: ' + imageUploader.maxFileSize + 'MB)' });
+                imageUploader.status.fail({ title: '文件太大', description: '(文件最大不超过' + imageUploader.maxFileSize + 'MB)' });
                 return;
             }
             imageUploader.uploadFile(file);
