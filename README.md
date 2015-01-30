@@ -1,4 +1,4 @@
 Simple course
 ======
 
-A course style like setup.
+A China variant of course style like setup.
