@@ -211,7 +211,7 @@
         return $('<div/>').html(text).text();
     }
 
-    viewModel.selectedLanguage = ko.observable("en");
+    viewModel.selectedLanguage = ko.observable("cn");
 
     viewModel.isCustom = ko.computed(function () {
         var language = viewModel.selectedLanguage();
