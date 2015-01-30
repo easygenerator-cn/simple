@@ -1,7 +1,7 @@
 ﻿define([], function () {
     var ctor = function(spec) {
 
-        var defaultTranslations = window.getTranslations().en;
+        var defaultTranslations = window.getTranslations().cn;
 
         if (!_.isNullOrUndefined(spec) && !_.isNullOrUndefined(spec.translations)) {
             spec.translations = mapTranslations(spec.translations);
